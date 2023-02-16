@@ -12,7 +12,7 @@ namespace Assignment_3
         private string custName;
         private string violation;
         
-        Suspended(string custName, string violation) 
+        public Suspended(string custName, string violation) 
             :base('D')
         {
             this.custName = custName;
@@ -20,7 +20,7 @@ namespace Assignment_3
 
         }
 
-        protected override string getCustomerInfo()
+        public override string getCustomerInfo()
         {
             return ("Violation: " + violation + ". Ticket Number " + getTicketNumber() + ". Name: " + custName);
         }

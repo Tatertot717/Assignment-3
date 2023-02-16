@@ -12,7 +12,7 @@ namespace Assignment_3
         private string custName;
         private string prevState;
         
-        Move(string custName, string prevState) 
+        public Move(string custName, string prevState) 
             :base('C')
         {
             this.custName = custName;
@@ -20,7 +20,7 @@ namespace Assignment_3
 
         }
 
-        protected override string getCustomerInfo()
+        public override string getCustomerInfo()
         {
             return ("Moved from "+prevState+". Ticket Number "+getTicketNumber()+". Name: "+custName);
         }

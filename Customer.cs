@@ -10,10 +10,10 @@ namespace Assignment_3
         private readonly char letter;
         private readonly int number;
 
-        private static int nextANum = 0;
-        private static int nextBNum = 0;
-        private static int nextCNum = 0;
-        private static int nextDNum = 0;
+        private static int nextANum = 1;
+        private static int nextBNum = 1;
+        private static int nextCNum = 1;
+        private static int nextDNum = 1;
 
         public Customer() { 
             letter = 'X';
@@ -55,7 +55,7 @@ namespace Assignment_3
             return letter.ToString() + number;
         }
 
-        protected abstract string getCustomerInfo();
+        public abstract string getCustomerInfo();
 
 
     }

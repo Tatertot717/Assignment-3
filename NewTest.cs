@@ -12,7 +12,7 @@ namespace Assignment_3
         private readonly string custName;
         private readonly string dateOfBirth;
         
-        NewTest(string custName, string dateOfBirth) 
+        public NewTest(string custName, string dateOfBirth) 
             :base('A')
         {
             this.custName = custName;
@@ -20,7 +20,7 @@ namespace Assignment_3
 
         }
 
-        protected override string getCustomerInfo()
+        public override string getCustomerInfo()
         {
             return ("New Driver's License. Ticket Number "+getTicketNumber()+". Name: "+custName+", DOB: "+dateOfBirth);
         }

@@ -11,13 +11,13 @@ namespace Assignment_3
     {
         private readonly string custName;
 
-        Renew(string custName)
+        public Renew(string custName)
             : base('B')
         {
             this.custName = custName;
         }
 
-        protected override string getCustomerInfo()
+        public override string getCustomerInfo()
         {
             return ("Renewal License. Ticket Number " + getTicketNumber() + ". Name: " + custName);
         }
